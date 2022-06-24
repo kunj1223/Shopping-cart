@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Assignment 3</title>
+        <script src="javascript.js"> </script>
+        <style>
+         #total {
+           display: inline;
+           margin-left: 70%;
+           font-size: large;
+         }
+
+         #body {
+           background-color: linear-gradient(to bottom right, rgb(47, 0, 255), rgb(214, 214, 54));
+         }
+        </style>
+
+    </head>
+
+    <body id="body">
+     <div>
+      <h1> My shopping List </h1>
+      <p id="total">Total :- <span id="inctax"> 0</span> (Inclusive Taxes.)</h3>
+      
+    </div>
+
+      <form> 
+        <input type="text" id="item" name="item" value="New item">
+        <input type="number" id="price" name="price" min="1" max="10000000000" value="Price">
+        <input type="button" value="Add" onclick="hello()" onsubmit="return false">
+
+      </form>
+
+      <table >
+        <tr>
+            <th style="padding-right: 25px;" > # </th>
+            <th style="padding-right: 100px;" > Item </th>
+            <th style="padding-right: 100px;" > Price </th>
+          </tr>
+          <hr>
+          <hr>
+          <tr>
+            <th style="padding-right: 25px;" id="column"> </th>
+            <th style="padding-right: 100px;" id="thing">  </th>
+            <th style="padding-right: 100px;" id="money">  </th>
+          </tr>
+      </table>
+
+    </body>
+</html>
